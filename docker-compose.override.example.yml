@@ -5,6 +5,8 @@ services:
     environment:
       MAX_HEAP_SIZE: "256M"
       HEAP_NEWSIZE: "128M"
+    tmpfs:
+      - /var/lib/cassandra
 
   cassandra_2:
     <<: *cassandra_override_base
