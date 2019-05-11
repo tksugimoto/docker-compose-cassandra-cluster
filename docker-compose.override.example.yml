@@ -1,0 +1,13 @@
+version: '2.4'
+
+services:
+  cassandra_1: &cassandra_override_base
+    environment:
+      - MAX_HEAP_SIZE=256M
+      - HEAP_NEWSIZE=128M
+
+  cassandra_2:
+    <<: *cassandra_override_base
+
+  cassandra_3:
+    <<: *cassandra_override_base
