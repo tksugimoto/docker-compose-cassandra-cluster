@@ -18,5 +18,5 @@ cassandraの `9042` 番portを forward する IP:PORT
 
 ## 起動
 ```
-docker-compose up -d
+docker-compose up -d --build
 ```
